@@ -1,7 +1,7 @@
 # Barcode precios
 
 ## Capturas de pantalla
-| Imagenes |
+Header | Image
 | ------------- | ------------- |
 | <img src="/images/1.png" width="100" height="200" />  | <img src="/images/2.png" width="100" height="200" />  |
 | <img src="/images/3.png" width="100" height="200" />  | <img src="/images/4.png" width="100" height="200" />  |
