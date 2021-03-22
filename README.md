@@ -1,4 +1,4 @@
 # Barcode precios
 
 ## Capturas de pantalla
-![Capturas](/images/1.png =250x250)
+<img src="/images/1.png" width="100" height="200" />
