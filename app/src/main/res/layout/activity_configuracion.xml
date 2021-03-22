@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/configuracion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundAlternative"
+    tools:context=".ActivityClass.ConfiguracionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            android:theme="?attr/actionBarTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorBackground"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/frameConfig1"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/iButtonSubirCarga"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorBackground"
+                    android:contentDescription="@string/descripcionConfig1"
+                    app:srcCompat="@drawable/networkup" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="130dp"
+                    android:text="@string/subirCarga"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameConfig2"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/iButtonUpdateEtiquetas"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorBackground"
+                    android:contentDescription="@string/descripcionConfig2"
+                    app:srcCompat="@drawable/systemupdate" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="130dp"
+                    android:text="@string/btn_configUpdateEtiqueta"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/frameConfig3"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/iButtonConfigReset"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorBackground"
+                    android:contentDescription="@string/descripcionConfig3"
+                    app:srcCompat="@drawable/empty" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="130dp"
+                    android:text="@string/btn_configReset"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameConfig4"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/iButtonUpdateSucursales"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorBackground"
+                    android:contentDescription="@string/descripcionConfig4"
+                    app:srcCompat="@drawable/sucursal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="130dp"
+                    android:text="@string/btn_configUpdateSucursales"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textViewURL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextInputLayoutAppearance"
+                android:textSize="24sp"
+                android:layout_marginTop="40dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editTextURL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_url"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textColor="@color/colorTextHint"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonEditarURL"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="12sp"
+                android:background="@color/colorButton"
+                android:text="@string/editarURL"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonGuardarURL"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:textSize="12sp"
+                android:background="@color/colorButton"
+                android:text="@string/guardarURL"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/buttonDefaultURL"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:textSize="12sp"
+                android:background="@color/colorButton"
+                android:text="@string/defaultURL"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
